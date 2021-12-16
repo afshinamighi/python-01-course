@@ -1,0 +1,16 @@
+title: Python-01
+description: How to start with Python?
+template:
+  repo: python-01-template
+  name: python-01
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
